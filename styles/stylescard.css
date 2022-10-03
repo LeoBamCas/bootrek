@@ -1,0 +1,213 @@
+@font-face {
+    font-family: "Stardate";
+    src: url("../assets/fonts/Stardate81316-aolE.ttf");
+}
+body{
+    background-image: url("../assets/img/espace.jpg");
+    font-family: "Stardate";
+    color: ghostwhite;
+    min-height: 100vh;
+}
+video{
+    height: 54vh;
+    margin-top: 1vh;
+}
+a{
+    text-decoration: none;
+    color: ghostwhite;
+}
+.blue{
+    background-color: rgb(103, 168, 241);
+}
+.orange{
+    background-color: rgb(240, 182, 74);
+}
+.space{
+    background-image: url("../assets/img/espace.jpg");
+}
+
+.hauteurmax{
+    height: 100vh;
+}
+
+.margintop{
+    margin-top: 3vh;
+}
+
+.carouselscreen{
+    overflow: hidden;
+    max-height: 45vh;
+}
+
+.marginbottom36{
+    margin-bottom: 36vh;
+}
+
+.marginbottom49{
+    margin-bottom: 49vh;
+}
+
+.grandma{
+    border: transparent;
+}
+
+.bande{
+    height: 4vh;
+}
+.transparent{
+    background-color: transparent;
+}
+.arrondi{
+    border-radius: 8%;
+}
+
+.vaisseau{
+    height: 5vh;
+}
+
+.versdroite{
+    animation-duration: 15s;
+    animation-name: "allerretourdroit";
+    animation-iteration-count: infinite;
+}
+
+@keyframes allerretourdroit {
+
+    0%{
+        margin-left: 0%;
+        transform: rotateY(0deg);
+        
+    }
+    
+    25%{
+        margin-left: 40%;
+        transform: rotateY(0deg);
+    }
+    
+    49%{
+        
+        margin-left: 90%;
+        transform: rotateY(0deg);
+    }
+    
+    50%{
+        margin-left: 90%;
+        transform: rotateY(180deg);
+    }
+    
+    
+    75%{
+        margin-left: 50%;
+        transform: rotateY(180deg);
+    }
+    99%{
+        margin-left: 0%;
+        transform: rotateY(180deg);
+    }
+
+    100%{
+        margin-left: 0%;
+    }
+}
+.versgauche{
+    animation-duration: 15s;
+    animation-name: "allerretourgauche";
+    animation-iteration-count: infinite;
+}
+@keyframes allerretourgauche {
+
+    0%{
+        margin-left: 90%;
+        transform: rotateY(0deg);
+        
+    }
+    
+    25%{
+        margin-left: 40%;
+        transform: rotateY(0deg);
+    }
+    
+    49%{
+        
+        margin-left: 0%;
+        transform: rotateY(0deg);
+    }
+    
+    50%{
+        margin-left: 0%;
+        transform: rotateY(180deg);
+    }
+    
+    
+    75%{
+        margin-left: 50%;
+        transform: rotateY(180deg);
+    }
+    99%{
+        margin-left: 90%;
+        transform: rotateY(180deg);
+    }
+
+    100%{
+        margin-left: 90%;
+    }
+}
+
+.cligno{
+    animation-duration: 3s;
+    animation-name: "clignotement";
+    animation-iteration-count: infinite;
+}
+.cligno2{
+    animation-duration: 1s;
+    animation-name: "clignotement";
+    animation-iteration-count:infinite;
+}
+
+@keyframes clignotement {
+    0%{
+        background-color:rgb(240, 182, 74) ;
+    }
+    85%{
+        background-color:rgb(240, 182, 74) ;
+
+    }
+    90%{
+        background-color: yellow;
+    }
+    95%{
+        background-color: orange;
+    }
+    97%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: rgb(240, 182, 74);
+    }
+    
+}
+
+.size45vh{
+    height: 45vh;
+}
+.mgb19{
+    margin-bottom: 19vh;
+}
+
+#votremessage{
+    width: 25vw;
+    height: 25vh;
+}
+
+@media  screen and (max-width:900px) {
+        video{
+            height: 27vh;
+        }
+        .adjust{
+            width: 100% !important;
+        }
+        #votremessage{
+            width: 17vw;
+        }
+    
+}

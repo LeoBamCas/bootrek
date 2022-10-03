@@ -1,0 +1,128 @@
+
+
+@font-face {
+    font-family: "Stardate";
+    src: url("../assets/fonts/Stardate81316-aolE.ttf");
+}
+
+body{
+    background-image: url("../assets/img/espace.jpg");
+    font-family: "Stardate";
+    color: ghostwhite;
+    min-height: 100vh;
+}
+
+header{
+    height: 25vh;
+}
+
+h1{
+
+    font-size: 394%;
+}
+h2{
+    padding-top: 6%;
+}
+a{
+    text-decoration: none;
+    color: ghostwhite;
+}
+video{
+    height: 54vh;
+}
+
+.blue{
+    background-color: rgb(103, 168, 241);
+    }
+
+.orange{
+    background-color: rgb(240, 182, 74);
+}
+
+.hd{
+    border-top-right-radius: 20px;
+}
+.hg{
+    border-top-left-radius: 20px;
+}
+
+.bd{
+    border-bottom-right-radius: 20px;
+}
+
+.bg{
+    border-bottom-left-radius: 20px;
+}
+
+.enterprise{
+    height: 5vh;
+    animation-duration: 15s;
+    animation-name: "allerretour";
+    animation-iteration-count: infinite;
+}
+
+@keyframes allerretour {
+
+    0%{
+        margin-left: 0%;
+        transform: rotateY(0deg);
+        
+    }
+    
+    25%{
+        margin-left: 40%;
+        transform: rotateY(0deg);
+    }
+    
+    49%{
+        
+        margin-left: 90%;
+        transform: rotateY(0deg);
+    }
+    
+    50%{
+        margin-left: 90%;
+        transform: rotateY(180deg);
+    }
+    
+    
+    75%{
+        margin-left: 50%;
+        transform: rotateY(180deg);
+    }
+    99%{
+        margin-left: 0%;
+        transform: rotateY(180deg);
+    }
+
+    100%{
+        margin-left: 0%;
+    }
+    
+}
+
+.carouselslide{
+    margin-left:12%;
+    height: 80vh;
+}
+
+.bande{
+    height: 4vh;
+}
+.ds9slide{
+    height: 20vh;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .carouselslide{
+        height: 27vh;
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+    .carouselslide{
+        height: 50vh;
+    }
+}
